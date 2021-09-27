@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="D_MaskEdit" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Static id="sta_01" taborder="0" text="&gt; 기본 MaskEdit" left="68" top="45" width="174" height="52"/>
+        <MaskEdit id="msk_01" taborder="1" left="62" top="95" width="228" height="45" format="AA-###" type="string"/>
+        <MaskEdit id="msk_02" taborder="2" left="62" top="148" width="228" height="45" format="#,###.00"/>
+        <Static id="sta_02" taborder="3" text="&gt; 주민번호 뒷자리 * 표시" left="62" top="203" width="174" height="52"/>
+        <MaskEdit id="msk_03" taborder="4" left="62" top="250" width="228" height="45" format="######-{#######}" type="string"/>
+        <Static id="sta_01_00" taborder="5" text="&gt; MaskEdit 표기법 (String)" left="330" top="38" width="174" height="52"/>
+        <Static id="sta_01_00_00" taborder="6" text="&gt; @@@@ 모든 문자 가능" left="330" top="71" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_00" taborder="7" left="510" top="71" width="228" height="45" format="@@@@" type="string"/>
+        <Static id="sta_01_00_00_00" taborder="8" text="&gt; #### 숫자가능 (0~9)" left="330" top="133" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_01" taborder="9" left="510" top="140" width="228" height="45" format="####" type="string"/>
+        <Static id="sta_01_00_00_01" taborder="10" text="&gt; **** 영어 대소문자" left="330" top="195" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_02" taborder="11" left="510" top="205" width="228" height="45" format="****" type="string"/>
+        <Static id="sta_01_00_00_02" taborder="12" text="&gt; 9999 영문, 숫자" left="330" top="257" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_03" taborder="13" left="510" top="270" width="228" height="45" format="9999" type="string"/>
+        <Static id="sta_01_00_00_03" taborder="14" text="&gt; AAAA 영대문자" left="330" top="319" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_04" taborder="15" left="510" top="335" width="228" height="45" format="AAAA" type="string"/>
+        <Static id="sta_01_00_00_04" taborder="16" text="&gt; aaaa 영소문자" left="330" top="381" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_05" taborder="17" left="510" top="400" width="228" height="45" format="aaaa" type="string"/>
+        <Static id="sta_01_00_00_05" taborder="18" text="&gt; A{AA}A 비밀번효 표기" left="330" top="443" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_05_00" taborder="19" left="510" top="465" width="228" height="45" format="A{AA}A" type="string"/>
+        <Static id="sta_01_00_00_06" taborder="20" text="&gt; ####" left="770" top="71" width="174" height="52"/>
+        <Static id="sta_01_00_00_00_00" taborder="21" text="&gt; #,##9 (없으면 빈값)" left="770" top="133" width="174" height="52"/>
+        <Static id="sta_01_00_00_01_00" taborder="22" text="&gt; #,##0 (없으면 0)" left="770" top="195" width="174" height="52"/>
+        <MaskEdit id="msk_01_00_02_00" taborder="23" left="950" top="195" width="228" height="45" format="#,##0" type="number"/>
+        <MaskEdit id="msk_01_00_01_00" taborder="24" left="950" top="133" width="228" height="45" format="#,##9" type="number"/>
+        <MaskEdit id="msk_01_00_00_00" taborder="25" left="950" top="71" width="228" height="45" format="####" type="number"/>
+        <Static id="sta_01_00_01" taborder="26" text="&gt; MaskEdit 표기법 (Number)" left="773" top="38" width="174" height="52"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.sta_01_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="F_CheckBox" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Static id="Static00" taborder="0" text="&gt; CheckBox 기본형태" left="39" top="40" width="172" height="52"/>
+        <CheckBox id="chk_01" taborder="1" text="체크박스 기본" left="39" top="105" width="232" height="57" onchanged="chk_01_onchanged"/>
+        <Static id="Static00_00" taborder="2" text="&gt; CheckBox 변형형태" left="39" top="180" width="172" height="52"/>
+        <CheckBox id="CheckBox00_00" taborder="3" text="왼쪽" left="39" top="245" width="116" height="57" onchanged="chk_all_onchanged"/>
+        <CheckBox id="CheckBox00_00_00" taborder="4" text="오른쪽" left="165" top="245" width="116" height="57" iconPosition="right" onchanged="chk_all_onchanged"/>
+        <CheckBox id="CheckBox00_00_00_00" taborder="5" text="아래쪽" left="417" top="245" width="116" height="57" iconPosition="bottom" onchanged="chk_all_onchanged"/>
+        <CheckBox id="CheckBox00_00_01" taborder="6" text="위쪽" left="291" top="245" width="116" height="57" iconPosition="top" onchanged="chk_all_onchanged"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.chk_01_onchanged = function(obj:nexacro.CheckBox,e:nexacro.CheckBoxChangedEventInfo)
+{
+	alert("값 선택 확인 : " + obj.value);
+};
+
+this.chk_all_onchanged = function(obj:nexacro.CheckBox,e:nexacro.CheckBoxChangedEventInfo)
+{
+	alert("값 선택 확인 : " + obj.value + " " + obj.id);
+};]]></Script>
+  </Form>
+</FDL>
