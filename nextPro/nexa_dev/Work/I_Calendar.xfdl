@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="I_Calendar" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Static id="Static00" taborder="0" text="&gt; 기본형태" left="81" top="51" width="120" height="60"/>
+        <Calendar id="cal_01" taborder="1" left="77" top="120" width="227" height="49" locale="ko_KR" dateformat="LONGDATE" editformat="SHORTDATE"/>
+        <Calendar id="cal_02" taborder="2" left="73" top="306" width="227" height="49" locale="ko_KR" dateformat="LONGDATE" editformat="SHORTDATE"/>
+        <Static id="Static00_00" taborder="3" text="&gt; 달력타입" left="77" top="192" width="113" height="38"/>
+        <Radio id="rad_01" taborder="4" left="77" top="235" width="233" height="55" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="3" onitemchanged="rad_01_onitemchanged">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">normal</Col>
+                <Col id="datacolumn">normal</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">spin</Col>
+                <Col id="datacolumn">spin</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">monthonly</Col>
+                <Col id="datacolumn">monthonly</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Static id="Static00_00_00" taborder="5" text="&gt; 달력지역변경" left="73" top="382" width="113" height="38"/>
+        <Radio id="rad_02" taborder="6" left="67" top="423" width="393" height="55" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="4" onitemchanged="rad_02_onitemchanged">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">bg_BG</Col>
+                <Col id="datacolumn">불가리아</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">pl_PL</Col>
+                <Col id="datacolumn">폴란드</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">ko_KR</Col>
+                <Col id="datacolumn">대한민국</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">ar_AE</Col>
+                <Col id="datacolumn">아라에미리트</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Calendar id="cal_03" taborder="7" left="70" top="478" width="227" height="182" locale="ko_KR" dateformat="LONGDATE" editformat="SHORTDATE" type="monthonly"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.rad_01_onitemchanged = function(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo)
+{
+	var radioValue = this.rad_01.value;
+	this.cal_02.set_type(radioValue);
+};
+
+this.rad_02_onitemchanged = function(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo)
+{
+	var radioValue = this.rad_02.value;
+	this.cal_03.set_locale(radioValue);
+};
+]]></Script>
+  </Form>
+</FDL>

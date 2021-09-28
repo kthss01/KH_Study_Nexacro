@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="K_ImageViewer" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <ImageViewer id="img_01" taborder="0" left="54" top="34" width="295" height="257" image="url('imagerc::cat.jpg')"/>
+        <ImageViewer id="img_02" taborder="1" left="57" top="328" width="243" height="108"/>
+        <Button id="btn_01" taborder="2" text="도넛" left="330" top="331" width="154" height="38" onclick="btn_01_onclick"/>
+        <Button id="btn_02" taborder="3" text="아이스크림" left="330" top="390" width="154" height="38" onclick="btn_02_onclick"/>
+        <Combo id="cbo_01" taborder="4" text="Combo00" left="498" top="50" width="262" height="61" innerdataset="ds_image" codecolumn="CODE" datacolumn="DATA" onitemchanged="cbo_01_onitemchanged"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.btn_01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.img_02.set_image("url('imagerc::donut.png')");
+	this.img_02.set_stretch('fit');
+};
+
+this.btn_02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.img_02.set_image("url('imagerc::icecream.png')");
+	this.img_02.set_stretch('fixaspectratio');
+};
+
+this.cbo_01_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	var imgUrl = this.cbo_01.value;
+	this.img_02.set_image("url('"+ imgUrl +"')");
+	this.img_02.set_stretch('fixaspectratio');
+};
+]]></Script>
+    <Objects>
+      <Dataset id="ds_image">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+          <Column id="DATA" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">imagerc::cat.jpg</Col>
+            <Col id="DATA">냥</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">imagerc::dog.jpg</Col>
+            <Col id="DATA">멍</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>
