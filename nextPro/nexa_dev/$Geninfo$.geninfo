@@ -8,11 +8,13 @@
       <XCSS rule_version="1.04"/>
       <Script rule_version="1.02"/>
     </Rule>
-    <Info project="C:\Users\Kay\git\KH_Study_Nexacro\nextPro\nexa_dev\" generated="C:\Users\Kay\Documents\nexacro\17.1\outputs\nexa_dev\">
-      <File url="environment.xml" checksum="20210927174239" errormsg=""/>
-      <File url="typedefinition.xml" checksum="20210927174632" errormsg=""/>
+    <Info project="C:\Users\Kay\git\KH_Study_Nexacro\nextPro\nexa_dev\" generated="C:\Users\Kay\git\KH_Study_Nexacro\nextPro\WebContent\">
+      <File url="typedefinition.xml" checksum="20210929174118" errormsg=""/>
       <File url="appvariables.xml" checksum="20210927174242" errormsg=""/>
+      <File url="environment.xml" checksum="20210927174239" errormsg=""/>
+      <File url="Work\M_Emp.xfdl" checksum="20210929184231" errormsg=""/>
       <File url="_resource_\_theme_\default\theme.xcss" checksum="20210927174242" errormsg=""/>
+      <File url="Application_Desktop.xadl" checksum="20210929171841" errormsg=""/>
       <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\framework\Framework.json" checksum="20200128141820" errormsg=""/>
       <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\resources\Resource.json" checksum="20200128141820" errormsg=""/>
       <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\CompBase.json" checksum="20200128141818" errormsg=""/>
@@ -20,16 +22,21 @@
       <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\Grid.json" checksum="20200128141818" errormsg=""/>
       <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\ListView.json" checksum="20200128141820" errormsg=""/>
       <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\DeviceAPI.json" checksum="20200128141818" errormsg=""/>
+      <File url="Work\A_Test.xfdl" checksum="20210927175822" errormsg=""/>
+      <File url="Work\B_Static.xfdl" checksum="20210927181126" errormsg=""/>
+      <File url="Work\C_Edit.xfdl" checksum="20210927191501" errormsg=""/>
+      <File url="Work\D_MaskEdit.xfdl" checksum="20210927193717" errormsg=""/>
+      <File url="Work\F_CheckBox.xfdl" checksum="20210927194527" errormsg=""/>
       <File url="Work\G_Radio.xfdl" checksum="20210928154749" errormsg=""/>
-      <File url="Application_Desktop.xadl" checksum="20210927174242" errormsg=""/>
       <File url="Work\H_Combo.xfdl" checksum="20210928155453" errormsg=""/>
       <File url="Work\I_Calendar.xfdl" checksum="20210928161115" errormsg=""/>
       <File url="Work\J_Container.xfdl" checksum="20210928172620" errormsg=""/>
       <File url="Work\K_ImageViewer.xfdl" checksum="20210928171721" errormsg=""/>
-      <File url="Base\J_Container2.xfdl" checksum="20210928170552" errormsg=""/>
-      <File url="Work\J_Container2.xfdl" checksum="20210928170739" errormsg=""/>
       <File url="Work\L_Grid.xfdl" checksum="20210928181920" errormsg=""/>
-      <File url="Work\M_Emp.xfdl" checksum="20210928181646" errormsg=""/>
+      <File url="lib_common\l_common.xjs" checksum="20210929155545" errormsg=""/>
+      <File url="lib_common\l_com.xjs" checksum="20210929174038" errormsg=""/>
+      <File url="lib_com\l_com.xjs" checksum="20210929183129" errormsg=""/>
+      <File url="lib_com\l_com.xjs.xjs" checksum="20210929174552" errormsg=""/>
     </Info>
   </GenInfo>
 </root>
